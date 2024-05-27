@@ -1,210 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jamison Hunter CV</title>
-  <script src="https://unpkg.com/feather-icons"></script>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio of Jamison</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/2/2f/Map-circle-blue.svg">
+    <meta name="description" content="Jamison's portfolio showcasing projects and skills in software development, including Python, C#, Rust, and MongoDB.">
 </head>
-
 <body>
-    <div class = "container">
-        <div class = "profile">
-            <div class="profile_container">
-                <div class="profile_profileimage">
-                    <img src = "./images/profileimage.png" alt = "Jamison Hunter" />
-                </div>  
-                <div>
-                    <h1 class = "portfolio_name">
-                    <span class = "first_name">JAMISON</span>
-                    <span class = "last_name">HUNTER</span>
-                    </h1>
-                    <p class="profile_title">
-                     Mathematician & Aspiring Data Scientist   
-                    </p>
-                    <p class="description">
-                    I graduated from Marian University of Indiana with a degree in Mathematics with a minor in Physics.
-                    I have both tutored and taught mathematics as well as worked in police dispatch before deciding to make 
-                    a career change into the field of data science and analysis. In order to accomplish this,
-                     I worked through a data science and machine learning bootcamp with Coding Dojo and received their certificate of completion. 
-                     More details on my specific coding skills can be found in my technical CV below.
-                    </p>
-                    <a class = "downloadBin" href = "./JamisonHunterResume.pdf" download = "jamisonhunter_cv.pdf">Download Technical CV PDF</a>
-                </div>
-            </div>
-            <hr class = "tophr">
-        </div>
-        <div class="group-1">
+    <nav id="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<!-- Skills Section -->
+    <section id="welcome-section">
+        <h1>Hello I'm Jamison</h1>
+        <p>An Aspiring Software Developer</p>
+    </section>
 
-            <div class = "skills">
-                <h3 class = "title">SKILLS</h3>
-                <ul class = "skill_list description">
-                    <li>Data Analysis</li>
-                    <li>Python</li>
-                    <li>HTML & CSS</li>
-                    <li>C++</li>
-                    <li>SQL</li>
-                    <li>Tableau</li>   
+    <section id="about">
+        <h1>About Me</h1>
+        <hr/>
+        <p>My background in mathematics and physics has given me a passion for problem solving. 
+            I have a Bachelor's degree in Mathematics from Marian University. I then studied data science 
+            and machine learning with Coding Dojo. I have since found a fascination with 
+            software development with the following technologies.
+        </p>
+        <ul>
+            <li><i class="fab fa-python"></i> Python</li>
+            <li><i class="fas fa-code"></i> C#</li>
+            <li><i class="fas fa-gear"></i> Rust</li>
+            <li><i class="fas fa-leaf"></i> MongoDB</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h1>Projects</h1>
+       
+        <div class="container">
+            <a href="https://www.issdash.net/" target="_blank"><div class="project">
+                <img loading="lazy" src="https://raw.githubusercontent.com/JamisonHunter/issdash.net/main/image.png" alt="An image of a world map with a marker on it">
+                <h4 class="project-tile">issdash.net</h4>
+                <ul>
+                    <li class="csharp">C#</li>
+                    <li class="javascript">JavaScript</li>
+                    <li class="docker">Docker</li>
                 </ul>
-            </div>
-
-<!-- Education Section -->
-
-            <div class = "edu">
-                <h3 class = "title">EDUCATION</h3>
-                <div class = "edu_item">
-                    <p class = "description">2018-2022</p>
-                    <h4 class = "edu_name">B.A. Mathematics</h4>
-                    <p class = "description">
-                        Marian University
-                    </p>
-                </div>
-                <div class = "edu_item">
-                    <p class = "description">2023</p>
-                    <h4 class = "edu_name">Data Science & Machine Learning Certificate</h4>
-                    <p class = "description">
-                        Coding Dojo
-                    </p>
-                </div>
-            </div>
-
-<!-- Portfolio Section -->
-
-            <div class = "skills">
-                <h3 class = "title">PORTFOLIO</h3>
-                <div class="social_item">
-                    <a href = "https://github.com/JamisonHunter/Product-Sales-Prediction" target="_blank" class="social_item">
-                        <i data-feather="github"></i>
-                        <span>Source Code</span>
-                    </a>
-                </div>
-                <h4 class = "edu_name">Prediction of Product Sales</h4>
-                <p class = "description">Python, Tensorflow, Sci-Kit Learn</p>
-
-                <div class="social_item">
-                    <a href = "https://github.com/JamisonHunter/High-Powered-Rocket-Prototype/tree/main" target="_blank" class="social_item">
-                        <i data-feather="github"></i>
-                        <span>Source Code</span>
-                    </a>
-                </div>
-                <h4 class = "edu_name">High Powered Hobby Rocket Prototype</h4>
-                <p class = "description">C++, Arduino, OpenSCAD</p>
-                
-                <div class="social_item">
-                    <a href = "https://github.com/JamisonHunter/IMDB-Data-Analysis" target="_blank" class="social_item">
-                        <i data-feather="github"></i>
-                        <span>Source Code</span>
-                    </a>
-                </div>
-                <h4 class = "edu_name">IMDB Data Analysis 2000-2007 (In Progress)</h4>
-                <p class = "description">Python, SQL</p>
-
-            </div>
+            </div></a>
+            <a href="https://www.astronomicalonline.com/" target="_blank"><div class="project">
+                <img loading="lazy" src="https://raw.githubusercontent.com/JamisonHunter/astronomicalonline.com/main/image.png" alt="An image of a website with astronomy pictures"/>
+                <h4 class="project-tile">astronomicalonline.com</h4>
+                <ul>
+                    <li class="python">Python</li>
+                    <li class="flask">Flask</li>
+                    <li class="mongodb">MongoDB</li>
+                </ul>
+            </div></a>
+            <a href="https://github.com/JamisonHunter/powergrab" target="_blank"><div class="project">
+                <img loading="lazy" src="https://opengraph.githubassets.com/1/JamisonHunter/powergrab" alt="An image of a Github repository called powergrab">
+                <h4 class="project-tile">powergrab</h4>
+                <ul>
+                    <li class="rust">Rust</li>
+                </ul>
+            </div></a>
         </div>
-        <div class="group-2">
+    </section>
 
-<!-- Experience Section -->
-
-            <div class="exp">
-                <h3 class="title">EXPERIENCE</h3>
-
-<!-- Summer school teacher -->
-
-                <div class="exp_item">
-                    <p class = "description">2019</p>
-                    <h4 class="exp_name">La Plaza, Indianapolis, IN</h4>
-                    <p class="description">Math & Science Teacher</p>
-                    <ul class="skill_list description">
-                        <li>Created lesson plans for 8-12 year olds.</li>
-                        <li>Generated interest in science through project focused lesson planning.</li>
-                    </ul>
-                </div>
-
-<!-- MUPD Dispatcher -->
-
-                <div class="exp_item">
-                    <p class = "description">2022-2023</p>
-                    <h4 class="exp_name">MUPD, Indianapolis, IN</h4>
-                    <p class="description">Dispatcher</p>
-                    <ul class="skill_list description">
-                        <li>Worked with university security software.</li>
-                        <li>Took emergency calls and quickly directed first responders.</li>
-                    </ul>
-                </div>
-
-<!-- Indy Reads bookstore volunteer -->
-
-                <div class="exp_item">
-                    <p class = "description">2018</p>
-                    <h4 class="exp_name">Indy Reads, Indianapolis, IN</h4>
-                    <p class="description">Volunteer</p>
-                    <ul class="skill_list description">
-                        <li>Organized books for store shelves.</li>
-                        <li>Helped setup for community outreach programs.</li>
-                    </ul>
-                </div>
-            </div>
-
-<!-- Interests Section -->
-
-            <div class="interests">
-                <h3 class="title">INTERESTS</h3>
-                <div class="interest_items">
-                    <div class="interest_item">
-                        <i data-feather="globe"></i>
-                        <span>Languages</span>
-                    </div>
-                    <div class="interest_item">
-                        <i data-feather="cpu"></i>
-                        <span>Programming</span>
-                    </div>
-                    <div class="interest_item">
-                        <i data-feather="aperture"></i>
-                        <span>Physics</span>
-                    </div>    
-                    <div class="interest_item">
-                        <i data-feather="tool"></i>
-                        <span>Rocketry</span>
-                    </div>        
-                </div>
-            </div>
-        </div>
-        <hr class = "bottomhr">
-        <div class="group-3">
-            <div class="contact">
-                <h3 class="title">CONTACT</h3>
-                <div class="contact_info">
-                    <p class="description">hunterjamison6@gmail.com</p>
-                    <p class="description">+1-317-946-9563</p>
-                </div>
-            </div>
-            <div class="socials">
-                <h3 class="title">SOCIALS</h3>
-                <div class="social_items">
-                    <div class="social_item">
-                        <a href = "https://github.com/JamisonHunter" target="_blank" class="social_item">
-                            <i data-feather="github"></i>
-                            <span>JamisonHunter</span>
-                        </a>
-                    </div>
-                    <div class="social_item">
-                        <a href = "https://www.linkedin.com/in/jamison-hunter-03503922a/" target="_blank" class="social_item">
-                            <i data-feather="linkedin"></i>
-                            <span>jamison-hunter</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script>
-        feather.replace()
-    </script>
+    <section id="contact">
+        <h1>Contact Me</h1>
+        <hr>
+        <ul>
+            <li><a id="profile-link" href="https://www.linkedin.com/in/jamison-hunter/" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+            <li><a id="profile-link" href="https://github.com/JamisonHunter" target="_blank"><i class="fab fa-github"></i> Github</a></li>
+        </ul>
+    </section>
 </body>
-
 </html>
