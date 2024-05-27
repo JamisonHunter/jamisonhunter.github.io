@@ -240,12 +240,14 @@ a {
     }
 
     nav ul {
-        margin-left: -50px;
-        margin-right: 0;
+        display: flex;
+        margin-left: -30px;
+        flex-wrap: nowrap;
     }
 
     nav li {
         font-size: 24px;
+        
     }
 
     #welcome-section h1 {
